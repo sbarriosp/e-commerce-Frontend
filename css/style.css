@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+} 
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+    padding: 0 0 0 20px;
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 84px;
+    color: black;
+    padding: 0 0 0 20px;
+    }
+
+h4 {
+    font-size: 20px;
+    color: black;
+    padding: 0 0 0 20px;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 0 0 0px;
+}
+
+p {
+    font-size: 16px; 
+    color:rgb(166, 110, 36);
+    padding: 0 0 0 20px;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+
+}
+
+.section.m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: white;
+    background-color: #2691d9;
+    border-radius: 10px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    transform: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+/*This part is for the nav-bar section*/
+
+.logo{
+    border-radius: 50%;
+    display: flex;
+    width: 15%;
+}
+
+#header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: rgb(95, 180, 223);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2%;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;  
+    position: relative; 
+}
+
+#navbar li a {
+     text-decoration: none;
+     font-size: 16px;
+     font-weight: 600;
+     color: black;
+     transition: 0.3s ease; /*that part can make a color transition when you slide to the options*/
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: white; /*this is the color transition when you slide into the options*/
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+
+}
+
+/*This part is from hero section*/
+
+#herotext {
+    display: grid;
+    grid-template-columns: repeat (10, 1fr);
+    width: 100vw;
+    align-items: center;
+    margin: 10px 20px 10px 20px;
+}
+
+.herotextimg {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+
+#hero h4 {
+    padding-bottom: 15px;
+    grid-template-columns: repeat (10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+#hero h1 {
+    color: rgb(166, 110, 36); 
+    grid-template-columns: repeat (10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+#hero button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: white;
+    background-color: #2691d9;
+    border-radius: 10px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    transform: 0.2s;
+    margin: 2%;
+}
+
+#hero button:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+
+/*This is part of the feature section which offers our services*/
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: rgb(127, 255, 251);
+}
+
+#feature .fe-box:nth-child(2) h6{
+    background-color: pink;
+}
+
+#feature .fe-box:nth-child(3) h6{
+    background-color: rgb(68, 226, 92);
+}
+
+#feature .fe-box:nth-child(4) h6{
+    background-color: rgb(127, 206, 255);
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color: rgb(165, 127, 255);
+}
+
+#feature .fe-box:nth-child(6) h6{
+    background-color: rgb(255, 200, 127);
+}
+
+/*This part is for the products section*/
+
+#product1{
+    text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;  
+    padding: 10px 12px;
+    border: 1px solid #e9f4fb;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position:static;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}     
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .desspan{
+    color: gray;
+
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+} 
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: #2691d9;
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e9f4fb;
+    font-weight: 500;
+    color: #2691d9;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px; 
+}
+ 
+/*This is the banner section*/
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(222, 182, 6);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: black;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: black;
+    font-size: 50px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: #2691d9; 
+    font-size: 60px;
+}
+
+#banner button:hover {
+    background-color: white;
+    background: black;
+}
+
+/*This part is for newsletter section*/
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(248, 244, 145);
+    background-position: 20% 30%;
+    background-repeat: no-repeat;
+}
+
+#newsletter h4 {
+    font-size: 35px;
+    font-weight: 700;
+    color: black;   
+}
+
+#newsletter p {
+    padding-top: 2%;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;   
+}
+
+#newsletter span {
+    color:#2691d9
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent; 
+    border-radius: 4px;
+    outline:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/*This is the footer section*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+   font-size: 14px;
+   padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+    
+}
+
+footer .follow i {
+    color: black;
+    padding-right: 4px;
+    padding: 0 0 0 20px;
+    cursor:pointer;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #2691d9;
+}
+
+footer .install .row img {
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+/*There is the part of Shop-page*/
+
+#page-header {
+    background-color: rgb(222, 182, 6);
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+}
+
+#page-header h2, #page-header p {
+    color: black;
+}
+
+/*This is the part of a single product image*/
+
+#prodetails {
+    width: 40%;
+    margin-right: 50px;
+    margin-top: 20px;
+    
+}
+
+#MainImg {
+    height: 200px;  
+    width: 250px;  
+    float: center;
+    position:initial  
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro input:focus {
+    outline: none;
+}
+
+#prodetails .single-pro button {
+    background-color: black;
+    color:white;
+}
+
+#prodetails .single-pro span {
+    line-height: 25px;
+}
+
+
+/*There we'll make it responsive with jQuery*/
+
+@media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #2691d9;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.5s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: black;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left:30px;
+        color: white;
+        font-size: 24px;
+    }
+
+    #lg-bag {
+        display: none;
+
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 80vh;
+    }
+
+    #newsletter .form {
+        width: 85%;
+        padding: 15px 0 0 12px;
+    }
+}
+
+@media (max-width: 477px) {
+    #header {
+        padding: 10px 30px;
+    }
+
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+
+}
